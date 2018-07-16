@@ -571,6 +571,7 @@ impl Configuration {
 				Some(ref d) => to_u256(d)?,
 				None => U256::max_value(),
 			},
+			tx_queue_no_cheap_checks: self.args.flag_tx_queue_no_cheap_checks,
 		})
 	}
 
